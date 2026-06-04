@@ -15,18 +15,27 @@ Crea una variable "mascotas" que almacene una lista con los siguientes elementos
 Imprime por consola el valor almacenado
 Despues haz los pasos pedidos
 """
-# Escribe tu código aquí
+mascotas = ['perro', 'gato', 'loro']
+print(mascotas)
 
 # Escribe el código para saber la cantidad de elementos que tiene la lista, imprimir por consola
+cantidad = len(mascotas)
+print(cantidad)
 
 # Escribe el código para acceder al valor de la posición 2, imprimir por consola
+print(mascotas[2])
 
 # Escribe el código para agregar una elemento a la lista, imprimir por consola la lista
+mascotas.append("conejo")
+print(mascotas)
 
 # Escribe el código para modificar un elemento de la lista, imprimir por consola la lista
+mascotas[1] = "hamster"
+print(mascotas)
 
 # Escribe el código para eliminar un elemento de la lista, imprimir por consola la lista
-
+mascotas.remove("conejo")
+print(mascotas)
 
 """
  --- TUPLAS ---
@@ -42,15 +51,20 @@ Imprime por consola el valor almacenado
 Despues haz los pasos pedidos
 """
 # Escribe tu código aquí
+plantas = ('cactus', 'orquidea', 'rosas')
+print(plantas)
 
 # Escribe el código para saber la cantidad de elementos que tiene la tupla, imprimir por consola
+cantidad = len(plantas)
+print(cantidad)
 
 # Escribe el código para acceder al valor de la posición 2, imprimir por consola
+print(plantas[2])
 
 # Intentar modificar una tupla
-# plantas[1] = 'hoja rota'  # Descomenta esta línea para ver qué sucede
+#plantas[1] = 'hoja rota'   #Descomenta esta línea para ver qué sucede
 
-# Escribe tu análisís acá acerca de qué sucede
+# Las tuplas son inmutables, no se pueden modificar sus elementos una vez creadas
 
 
 """
@@ -67,17 +81,26 @@ Imprime por la terminal dicha variable
 Haz los pasos pedidos
 """
 # Escribe el código aqui
+nombres = {'María', 'Cris', 'Cris', 'Alex'}
+print(nombres)
 
 # Explica qué sucede cuándo imprimes el valor que almacena "nombres"
+# Los sets no permiten elementos duplicados, así que solo imprime tres elementos
 
 # Escribe el código para saber la cantidad de elementos que tiene el set, imprimir por consola
+cantidad = len(nombres)
+print(cantidad)
 
 # Escribe el código para acceder al valor de la posición 3, imprimir por consola
+# No se puede acceder al valor de las posiciones ya que los sets son desordenados y no funciona como una lista
 
 # Escribe el código para agregar una elemento al set, imprimir por consola el set
+nombres.add('Juan')
+print(nombres)
 
 # Escribe el código para eliminar un elemento del set, imprimir por consola el set
-
+nombres.remove('Juan')
+print(nombres)
 """
  --- DICCIONARIOS ---
 Los diccionarios son desordenados y mutables.
@@ -91,9 +114,18 @@ Crea un diccionario llamado "ciudad" con las claves 'nombre' y 'pais' y los valo
 Imprime el diccionario 
 """
 # Escribe el código aqui para acceder y ver por consola el valor de 'nombre'
+ciudad = {"nombre": "Barcelona",
+          "pais": "España"
+          }
+print(ciudad["nombre"])
 
 # Escribe el código aqui para añadir un nuevo par clave-valor y ver por consola el valor de 'ciudad'
+ciudad["continente"] = "Europa"
+print(ciudad)
 
 # Escribe el código aqui para modificar el valor de un par clave-valor de 'ciudad' y verlo por consola
-
+ciudad["pais"] = "Francia"
+print(ciudad)
 # Escribe el código aqui para eliminar un par clave-valor de 'ciudad' y verlo por consola
+del ciudad["continente"]
+print(ciudad)
